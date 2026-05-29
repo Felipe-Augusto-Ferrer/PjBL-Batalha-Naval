@@ -78,4 +78,12 @@ def introducao():
     print()
     print("=" * 70 + "\n")
     time.sleep(1.0)
-introducao()
+
+#Menu
+def menu():
+    print("1- Jogar campanha")
+    print("2- Como jogar")
+    print("3- Menu")
+    print("4- Sair")
+
+        
