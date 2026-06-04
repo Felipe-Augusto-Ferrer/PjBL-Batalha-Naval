@@ -111,7 +111,7 @@ def tutorial():
     print("Quando você atinge um navio, a posição é marcada com 💥.")
     input("Pressione ENTER para continuar o tutorial...")
 
-    os.system("cls")
+    os.system('cls')
 
     print(" COMO JOGAR ")
 
@@ -133,9 +133,10 @@ def tutorial():
     print("🎯 Afundar todos os navios inimigos.")
     print("🚢 Cada navio ocupa várias posições.")
     print("💥 Acerte todas as partes para afundá-lo.")
-    print("🏆 Destrua toda a frota para vencer a batalha.")
+    print("🏆 Destrua toda a frota para vencer a batalha!")
 
-    input("Pressione ENTER para voltar ao menu inicial...")
+    input("Pressione ENTER para voltar ao menu inicial.")
+    menu()
 
 #Tabuleiro 5x10
 def modoFacil():
@@ -218,6 +219,8 @@ def menu():
             time.sleep(0.5)
             os.system('cls')
             print("1- Iniciar Campanha\n\033[40m\033[37m2- Como jogar\033[0m\n3- Creditos\n4- Sair")
+
+        tutorial()
 
     elif opcaoMenu == "3":
         os.system('cls')
