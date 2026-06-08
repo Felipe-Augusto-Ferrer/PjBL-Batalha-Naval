@@ -174,28 +174,6 @@ def imprimir(tabuleiro):
     for linha in tabuleiro:
         print(" ".join(linha))
 
-#Créditos
-def creditos():
-    os.system('cls')
-    print("██████╗  █████╗ ████████╗ █████╗ ██╗     ██╗  ██╗ █████╗     ███╗   ██╗ █████╗ ██╗   ██╗ █████╗ ██╗")
-    time.sleep(0.5)
-    print("██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗██║     ██║  ██║██╔══██╗    ████╗  ██║██╔══██╗██║   ██║██╔══██╗██║")    
-    time.sleep(0.5)     
-    print("██████╔╝███████║   ██║   ███████║██║     ███████║███████║    ██╔██╗ ██║███████║██║   ██║███████║██║")    
-    time.sleep(0.5)     
-    print("██╔══██╗██╔══██║   ██║   ██╔══██║██║     ██╔══██║██╔══██║    ██║╚██╗██║██╔══██║╚██╗ ██╔╝██╔══██║██║")    
-    time.sleep(0.5)     
-    print("██████╔╝██║  ██║   ██║   ██║  ██║███████╗██║  ██║██║  ██║    ██║ ╚████║██║  ██║ ╚████╔╝ ██║  ██║███████╗") 
-    time.sleep(0.5)   
-    print("╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝  ╚═══╝╚═╝  ╚═╝  ╚═══╝  ╚═╝  ╚═╝╚══════╝") 
-    time.sleep(0.5)  
-                                                                                                            
-    print()
-    narracao("Um jogo feito por:")
-    narracao("Felipe Augusto")
-    narracao("Daniel Bretzke")
-    narracao("Samuel Cardoso")
-
 #Colocar embarcação
 def colocarEmbarcacao(tabuleiro):
 
@@ -331,6 +309,7 @@ def comoJogar():
         os.system('cls')
         print("1- Iniciar Campanha\n\033[40m\033[37m2- Como jogar\033[0m\n3- Creditos\n4- Sair")      
 
+
 #Créditos (menu)    
 def creditos():
     for i in range(1,4):
@@ -395,14 +374,18 @@ def menu():
             campanha()
 
             #Voltar ao menu
-            while continuar != voltar or continuar != encerrar:
-                continuar=input(narracao("Deseja voltar ao menu ou encerrar o jogo?")).lower()
+            continuar = ""
+            while continuar != "s" or continuar != "n":
+                continuar=input(narracao("Deseja voltar ao menu ou encerrar o jogo?(s/n)")).lower()
                 
-                if continuar == "voltar":
+                if continuar == "s":
                     continue
 
-                if continuar == "encerrar":
+                elif continuar == "n":
                     break
+
+                else:
+                    print("Incorreto, digite 'Voltar' ou 'Encerrar'")
 
         #Como Jogar
         elif opcaoMenu == "2":
