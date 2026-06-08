@@ -93,39 +93,88 @@ def introducao():
 #Tabuleiro 5x10
 def modoFacil():
     tabuleiro=[
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"]
-        ]
+        ["🟦","1️⃣ ","2️⃣ ","3️⃣ ","4️⃣ ","5️⃣ ","6️⃣ ","7️⃣ ","8️⃣ ","9️⃣ ","🔟"],
+        ["1️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["2️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["3️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["4️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["5️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"]
+    ]
     return tabuleiro
+
+    tabuleiroInimigo=[
+        ["🟦","1️⃣ ","2️⃣ ","3️⃣ ","4️⃣ ","5️⃣ ","6️⃣ ","7️⃣ ","8️⃣ ","9️⃣ ","🔟"],
+        ["1️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["2️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["3️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["4️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["5️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"]
+    ]
+    return tabuleiroInimigo
+
+    tabuleiroVisual=[
+        ["🟦","1️⃣ ","2️⃣ ","3️⃣ ","4️⃣ ","5️⃣ ","6️⃣ ","7️⃣ ","8️⃣ ","9️⃣ ","🔟"],
+        ["1️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["2️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["3️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["4️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["5️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"]
+    ]
+    return tabuleiroVisual
 
 #Tabuleiro 10x10
 def modoDificil():
     tabuleiro=[
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"]
+        ["🟦", "1️⃣ ","2️⃣ ","3️⃣ ","4️⃣ ","5️⃣ ","6️⃣ ","7️⃣ ","8️⃣ ","9️⃣ ","🔟"],
+        ["1️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["2️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["3️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["4️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["5️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["6️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["7️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["8️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["9️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["🔟", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"]
     ]
     return tabuleiro
+
+    tabuleiroInimigo=[
+        ["🟦", "1️⃣ ","2️⃣ ","3️⃣ ","4️⃣ ","5️⃣ ","6️⃣ ","7️⃣ ","8️⃣ ","9️⃣ ","🔟"],
+        ["1️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["2️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["3️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["4️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["5️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["6️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["7️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["8️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["9️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["🔟", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"]
+    ]
+    return tabuleiroInimigo
+
+    tabuleiroVisual=[
+        ["🟦", "1️⃣ ","2️⃣ ","3️⃣ ","4️⃣ ","5️⃣ ","6️⃣ ","7️⃣ ","8️⃣ ","9️⃣ ","🔟"],
+        ["1️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["2️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["3️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["4️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["5️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["6️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["7️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["8️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["9️⃣ ", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
+        ["🔟", "🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"]
+    ]
+    return tabuleiroVisual
 
 #Impressão do tabuleiro
 def imprimir(tabuleiro):
     for linha in tabuleiro:
         print(" ".join(linha))
 
-def posicao():
-    imprimir(tabuleiro)
-
-#Creditos
+#Créditos
 def creditos():
     os.system('cls')
     print("██████╗  █████╗ ████████╗ █████╗ ██╗     ██╗  ██╗ █████╗     ███╗   ██╗ █████╗ ██╗   ██╗ █████╗ ██╗")
@@ -148,157 +197,233 @@ def creditos():
     narracao("Samuel Cardoso")
 
 #Colocar embarcação
-def colocarEmbarcacao():
-    tabuleiro = [
-        ["1 ","2 ","3 ","4 ","5 ","6 ","7 ","8 ","9 ","10"],
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"],
-        ["🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊","🌊"]
-    ]
+def colocarEmbarcacao(tabuleiro):
 
+    os.system('cls')
     print("--- TABULEIRO INICIAL ---")
-    for linha in tabuleiro:
-        print(" ".join(linha))
 
+    imprimir(tabuleiro)
+
+    #Define o range de acordo com o tabuleiro
+    maxLinhas = len(tabuleiro) - 1
+    maxColunas = len(tabuleiro[0]) - 1
+
+    #Colocar 5 barcos
     for embarcacao in range(5):
         while True:
+
             linhaBarco=int(input("Qual linha deseja colocar um barco? "))
             colunaBarco=int(input("E a coluna? "))
             os.system('cls')
 
-            if 4 >= linhaBarco >= 0 and 9 >= colunaBarco >= 0:
+            #Fallback para não colocar nos números de localização
+            if linhaBarco == 0 or colunaBarco == 0:
+                for linha in tabuleiro:
+                    print(" ".join(linha))
+                print("\n Alerta do Radar: Coordenada inválida! Escolha outra.")
+                continue
+
+            #Dentro do tabuleiro
+            if 1 <= linhaBarco <= maxLinhas and 1 <= colunaBarco <= maxColunas:
 
                 #Caso ja tenha um barco
                 if tabuleiro[linhaBarco][colunaBarco] == "🛥️ ":
                     print("\n Alerta do Radar: Já existe um navio nessa coordenada! Escolha outra.")
-                
+        
                 #Caso não tenha
                 else:
                     tabuleiro[linhaBarco][colunaBarco] = "🛥️ "
+
+                    os.system('cls')
+                    for linha in tabuleiro:
+                        print(" ".join(linha))
                     print("⚓ Barco posicionado com sucesso!") 
+                    time.sleep(1)
+
                     break  
-                    
+  
             else:
+                os.system('cls')
+                for linha in tabuleiro:
+                        print(" ".join(linha))
                 print("Invalido")
             
         #Print do tabuleiro com a embarcação
+        os.system('cls')
         for linha in tabuleiro:
             print(" ".join(linha))
 
-#Menu
-def menu():
-    opcaoMenu = ""
+#def atirar():
 
-    #Fallback
-    while opcaoMenu not in ("1", "2", "3", "4"):
+#Campanha (menu)   
+def campanha():
+    for i in range(1,4):
+        time.sleep(0.5)
         os.system('cls')
+        print("\033[47m\033[30m1- Iniciar Campanha\033[0m\n2- Como jogar\n3- Creditos\n4- Sair")
+        time.sleep(0.5)
+        os.system('cls')
+        print("\033[40m\033[37m1- Iniciar Campanha\033[0m\n2- Como jogar\n3- Creditos\n4- Sair")
 
-        print("1- Iniciar Campanha")
-        print("2- Como jogar")
-        print("3- Creditos")
-        print("4- Sair")
-
-        opcaoMenu = input()
-
-    #Iniciar Campanha
-    if opcaoMenu == "1":
-        for i in range(1,4):
-            time.sleep(0.5)
+    #Ver intrudução?
+    escolha = ""
+    while escolha not in ("s","n"):
+        os.system('cls')
+        escolha = input(
+            "---------------------------\n"
+            "|  Ver Introduçâo?  (s/n) |\n"
+            "---------------------------\n"
+        ).lower()
+        #Ver introdução
+        if escolha == "n":
             os.system('cls')
-            print("\033[47m\033[30m1- Iniciar Campanha\033[0m\n2- Como jogar\n3- Creditos\n4- Sair")
-            time.sleep(0.5)
+            intro = 0
+            break
+        #Pular introdução
+        elif escolha == "s":
             os.system('cls')
-            print("\033[40m\033[37m1- Iniciar Campanha\033[0m\n2- Como jogar\n3- Creditos\n4- Sair")
+            intro = 1
 
-        escolha = ""
-
-        while escolha != ("s" or "n"):
             os.system('cls')
-            escolha = input(
-                "---------------------------\n"
-                "|  Ver Introduçâo?  (s/n) |\n"
-                "---------------------------\n"
+            introducao()
+        else:
+            os.system('cls')
+            print("Comando Incorreto!")
+            time.sleep(1.5)
 
-            ).lower()
-            if escolha == "n":
-                os.system('cls')
-                intro = 0
-                break
-            elif escolha == "s":
-                os.system('cls')
-                intro = 1
+    #Escolha da dificuldade
+    escolha = ""
+    while escolha not in ("facil","dificil"):
+        os.system('cls')
+        escolha = input(
+            "--------------------------------\n"
+            "|     Escolha a Modalidade     |\n"
+            "--------------------------------\n"
+            "-- Facil   -- Tabuleiro 5 x 10 -\n"
+            "-- Dificil -- Tabuleiro 10 x 10 -\n"
+        ).lower()
+        #Modo fácil
+        if escolha == "facil":
+            modo = 1
+            tabuleiro=modoFacil()
+            tabuleiroInimigo=modoFacil()
+            tabuleiroVisual=modoFacil()
+        #Modo Dificil
+        elif escolha == "dificil":
+            modo = 2
+            tabuleiro=modoDificil()
+            tabuleiroInimigo=modoDificil()
+            tabuleiroVisual=modoDificil()
+        else:
+            os.system('cls')
+            print("Comando Incorreto!")
+            time.sleep(1.5)
     
-                os.system('cls')
-                introducao()
-            else:
-                os.system('cls')
-                print("Comando Incorreto!")
-                time.sleep(1.5)
+    colocarEmbarcacao(tabuleiro)
 
-        escolha = ""
+#Como jogar (menu)
+def comoJogar():
+    for i in range(1,2):
+        time.sleep(0.5)
+        os.system('cls')
+        print("1- Iniciar Campanha\n\033[47m\033[30m2- Como jogar\033[0m\n3- Creditos\n4- Sair")
+        time.sleep(0.5)
+        os.system('cls')
+        print("1- Iniciar Campanha\n\033[40m\033[37m2- Como jogar\033[0m\n3- Creditos\n4- Sair")      
 
-        while escolha not in ("facil" or "dificil"):
-            os.system('cls')
-            escolha = input(
-                "--------------------------------\n"
-                "|     Escolha a Modalidade     |\n"
-                "--------------------------------\n"
-                "-- Facil   -- Tabuleiro 5 x 10 -\n"
-                "-- Dificil -- Tabuleiro 10 x 10 -\n"
-
-            ).lower()
-            if escolha == "facil":
-                modo = 1
-                tabuleiro=modoFacil
-            elif escolha == "dificil":
-                modo = 2
-                tabuleiro=modoDificil
-            else:
-                os.system('cls')
-                print("Comando Incorreto!")
-                time.sleep(1.5)
-        
-        colocarEmbarcacao()
-
-    #Como Jogar
-    elif opcaoMenu == "2":
-        for i in range(1,2):
-            time.sleep(0.5)
-            os.system('cls')
-            print("1- Iniciar Campanha\n\033[47m\033[30m2- Como jogar\033[0m\n3- Creditos\n4- Sair")
-            time.sleep(0.5)
-            os.system('cls')
-            print("1- Iniciar Campanha\n\033[40m\033[37m2- Como jogar\033[0m\n3- Creditos\n4- Sair")      
-    
-    #Créditos
-    elif opcaoMenu == "3":
+#Créditos (menu)    
+def creditos():
+    for i in range(1,4):
+        time.sleep(0.5)
+        os.system('cls')
+        print("1- Iniciar Campanha\n2- Como jogar\n\033[47m\033[30m3- Creditos\033[0m\n4- Sair")
+        time.sleep(0.5)
         os.system('cls')
         print("1- Iniciar Campanha\n2- Como jogar\n\033[40m\033[37m3- Creditos\033[0m\n4- Sair")
-        
-        for i in range(1,4):
-            time.sleep(0.5)
-            os.system('cls')
-            print("1- Iniciar Campanha\n2- Como jogar\n\033[47m\033[30m3- Creditos\033[0m\n4- Sair")
-            time.sleep(0.5)
-            os.system('cls')
-            print("1- Iniciar Campanha\n2- Como jogar\n\033[40m\033[37m3- Creditos\033[0m\n4- Sair")
 
-        creditos()
+    os.system('cls')
+    print("██████╗  █████╗ ████████╗ █████╗ ██╗     ██╗  ██╗ █████╗     ███╗   ██╗ █████╗ ██╗   ██╗ █████╗ ██╗")
+    time.sleep(0.5)
+    print("██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗██║     ██║  ██║██╔══██╗    ████╗  ██║██╔══██╗██║   ██║██╔══██╗██║")    
+    time.sleep(0.5)     
+    print("██████╔╝███████║   ██║   ███████║██║     ███████║███████║    ██╔██╗ ██║███████║██║   ██║███████║██║")    
+    time.sleep(0.5)     
+    print("██╔══██╗██╔══██║   ██║   ██╔══██║██║     ██╔══██║██╔══██║    ██║╚██╗██║██╔══██║╚██╗ ██╔╝██╔══██║██║")    
+    time.sleep(0.5)     
+    print("██████╔╝██║  ██║   ██║   ██║  ██║███████╗██║  ██║██║  ██║    ██║ ╚████║██║  ██║ ╚████╔╝ ██║  ██║███████╗") 
+    time.sleep(0.5)   
+    print("╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝  ╚═══╝╚═╝  ╚═╝  ╚═══╝  ╚═╝  ╚═╝╚══════╝") 
+    time.sleep(0.5)  
+                                                                                                            
+    print()
+    narracao("Um jogo feito por:")
+    narracao("Felipe Augusto")
+    narracao("Daniel Bretzke")
+    narracao("Samuel Cardoso")
 
-    #Sair
-    elif opcaoMenu == "4":
+#Sair
+def sair():
+    os.system('cls')
+    print("1- Iniciar Campanha\n2- Como jogar\n3- Creditos\n\033[40m\033[37m4- Sair\033[0m")
+    for i in range(1,4):
+        time.sleep(0.5)
+        os.system('cls')
+        print("1- Iniciar Campanha\n2- Como jogar\n3- Creditos\n\033[47m\033[30m4- Sair\033[0m")
+        time.sleep(0.5)
         os.system('cls')
         print("1- Iniciar Campanha\n2- Como jogar\n3- Creditos\n\033[40m\033[37m4- Sair\033[0m")
-        
-        for i in range(1,4):
-            time.sleep(0.5)
+
+#Menu
+def menu():
+    while True:
+        os.system('cls')
+
+        #Fallback + Opções
+        opcaoMenu = ""
+        while opcaoMenu not in ("1", "2", "3", "4"):
             os.system('cls')
-            print("1- Iniciar Campanha\n2- Como jogar\n3- Creditos\n\033[47m\033[30m4- Sair\033[0m")
-            time.sleep(0.5)
-            os.system('cls')
-            print("1- Iniciar Campanha\n2- Como jogar\n3- Creditos\n\033[40m\033[37m4- Sair\033[0m")
+
+            print("1- Iniciar Campanha")
+            print("2- Como jogar")
+            print("3- Creditos")
+            print("4- Sair")
+
+            opcaoMenu = input()
+
+        #Iniciar Campanha
+        if opcaoMenu == "1":
+            campanha()
+
+            #Voltar ao menu
+            while continuar != voltar or continuar != encerrar:
+                continuar=input(narracao("Deseja voltar ao menu ou encerrar o jogo?")).lower()
+                
+                if continuar == "voltar":
+                    continue
+
+                if continuar == "encerrar":
+                    break
+
+        #Como Jogar
+        elif opcaoMenu == "2":
+            comoJogar()
+            time.sleep(5)
+            continue
+
+        #Créditos
+        elif opcaoMenu == "3":
+            creditos()
+            time.sleep(2)
+            print()
+            narracao("Voltando...",0.5)
+            continue
+
+        #Sair
+        elif opcaoMenu == "4":
+            sair()
+            print()
+            print("--Jogo encerrado.")
+            break
         
 #Main
 def __main__():
