@@ -94,7 +94,10 @@ def tutorial():
     print("🚢 = Navio")
     print("🌊 = Água")
     print("Os navios ficam escondidos no tabuleiro.")
-    input("Pressione ENTER para continuar o tutorial...")
+    continuar = input("Digite 1 para continuar: ")
+
+    while continuar != "1":
+        continuar = input("Digite 1 para continuar: ")
 
     os.system("cls")
 
@@ -109,7 +112,10 @@ def tutorial():
 
     print("💥 = Você acertou!")
     print("Quando você atinge um navio, a posição é marcada com 💥.")
-    input("Pressione ENTER para continuar o tutorial...")
+    continuar = input("Digite 1 para continuar: ")
+
+    while continuar != "1":
+        continuar = input("Digite 1 para continuar: ")
 
     os.system('cls')
 
@@ -124,7 +130,10 @@ def tutorial():
 
     print("❌ = Você errou o disparo...")
     print("Se não houver um navio na coordenada escolhida, você erra o disparo.")
-    input("Pressione ENTER para continuar o tutorial...")
+    continuar = input("Digite 1 para continuar: ")
+
+    while continuar != "1":
+        continuar = input("Digite 1 para continuar: ")
 
     os.system("cls")
 
@@ -135,7 +144,10 @@ def tutorial():
     print("💥 Acerte todas as partes para afundá-lo.")
     print("🏆 Destrua toda a frota para vencer a batalha!")
 
-    input("Pressione ENTER para voltar ao menu inicial.")
+    continuarmenu = input("Digite 1 para voltar ao menu: ")
+
+    while continuarmenu != "1":
+        continuarmenu = input("Digite 1 para voltar ao menu: ")
     menu()
 
 #Tabuleiro 5x10
