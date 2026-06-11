@@ -331,7 +331,8 @@ def combate(tabuleiroInimigo,tabuleiroVisual,tabuleiro,tabuleiroVisual2):
             print(f"{VERDE}======================================{RESET}")
             print(f"{VERDE}||          VISOR DO RADAR          ||{RESET}")
             imprimir(tabuleiroInimigo)
-            narracao(f"\n ALVOS RESTANTES: {barcos}")
+            narracao(f"\n ALVOS RESTANTES: {barcosInimigos}")
+            narracao(f"\n SEUS BARCOS: {barcos}")
             print(f"{VERDE}Qual linha deseja atirar?{RESET}")
             linhaTiro = input()
 
