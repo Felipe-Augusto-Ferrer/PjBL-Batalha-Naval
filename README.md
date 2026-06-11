@@ -111,14 +111,15 @@ Batalha Naval
 ├── Créditos
 └── Encerramento
 
+---
 
-
-👥 Integrantes
+## 👥 Integrantes
 Projeto desenvolvido por:
 Samuel Cardoso
 Felipe Augusto
 Daniel Bretzke
 
+---
 
-🏆 Objetivo Final
+## 🏆 Objetivo Final
 Destruir todas as embarcações inimigas utilizando estratégia e lógica antes que sua própria frota seja completamente eliminada.
