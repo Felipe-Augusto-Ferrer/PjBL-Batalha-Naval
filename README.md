@@ -97,21 +97,6 @@ Durante o desenvolvimento foram utilizados diversos conceitos estudados em sala 
 
 ---
 
-## 📂 Estrutura do Projeto
-
-Batalha Naval
-│
-├── Menu Principal
-├── Introdução Narrativa
-├── Tutorial
-├── Escolha de Dificuldade
-├── Posicionamento de Embarcações
-├── Combate
-├── Créditos
-└── Encerramento
-
----
-
 ## 👥 Integrantes
 Projeto desenvolvido por:
 Samuel Cardoso
