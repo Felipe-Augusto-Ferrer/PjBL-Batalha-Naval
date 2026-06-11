@@ -99,7 +99,6 @@ Durante o desenvolvimento foram utilizados diversos conceitos estudados em sala 
 
 ## 📂 Estrutura do Projeto
 
-```text
 Batalha Naval
 │
 ├── Menu Principal
