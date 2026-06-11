@@ -1,180 +1,167 @@
-# ⚓ BATALHA NAVAL
+⚓ Batalha Naval
 
-## 📖 Sobre o Projeto
+📖 Sobre o Projeto
 
-Batalha Naval é um jogo desenvolvido em Python inspirado no clássico jogo de estratégia naval. O projeto foi criado com o objetivo de aplicar conceitos fundamentais de programação, como estruturas de repetição, funções, listas bidimensionais (matrizes), condicionais e interação com o usuário através do terminal.
+Batalha Naval é um jogo desenvolvido em Python inspirado no clássico jogo de estratégia naval. O jogador assume o papel de um comandante durante a Segunda Guerra Mundial e precisa localizar e destruir a frota inimiga utilizando coordenadas em um tabuleiro.
 
-A proposta do jogo é colocar o jogador no papel de um comandante naval durante a Segunda Guerra Mundial. Em meio a uma densa neblina no Oceano Atlântico Sul, o sistema de radar falha e a única forma de sobreviver é utilizar estratégia e lógica para localizar e destruir a frota inimiga.
-
-Além da mecânica principal do jogo, esta versão já conta com uma introdução narrativa para aumentar a imersão do jogador e um tutorial explicando as regras básicas da Batalha Naval.
 
 ---
 
-## 🎯 Objetivos do Projeto
+🎮 História
 
-* Desenvolver um jogo utilizando a linguagem Python.
-* Aplicar conceitos aprendidos em sala de aula.
-* Trabalhar com matrizes para representar tabuleiros.
-* Criar menus interativos.
-* Utilizar funções para organizar o código.
-* Desenvolver lógica de navegação entre telas.
-* Implementar futuramente o sistema completo de combate naval.
+A campanha se passa no ano de 1942, durante uma operação naval no Oceano Atlântico Sul.
 
----
+Após uma falha completa nos sistemas de radar, o navio do jogador fica cercado por uma densa névoa e sem qualquer informação sobre a posição da frota inimiga.
 
-## 🗺️ Estrutura Atual do Jogo
+Com os sistemas comprometidos, resta apenas uma alternativa:
 
-Atualmente o projeto possui as seguintes funcionalidades:
+Utilizar estratégia para localizar e destruir todos os navios inimigos antes que eles afundem sua embarcação.
 
-### ✅ Menu Principal
-
-O menu permite ao usuário navegar pelas opções disponíveis:
-
-```text
-1 - Iniciar Campanha
-2 - Como Jogar
-3 - Créditos
-4 - Sair
-```
 
 ---
 
-### ✅ Introdução Narrativa
+✨ Funcionalidades
 
-Antes do início da campanha, o jogador acompanha uma pequena história ambientada em 1942.
+🚢 Campanha
 
-A introdução utiliza um efeito de digitação para tornar a experiência mais dinâmica e imersiva.
+Introdução narrativa com efeito de máquina de escrever.
 
-Exemplo:
+Escolha de dificuldade.
 
-```text
-Ano: 1942
+Posicionamento manual das embarcações do jogador.
 
-Oceano Atlântico Sul - 03:42 da madrugada
+Posicionamento aleatório das embarcações inimigas.
 
-Comandante... o radar parou de responder.
-Pane geral. Estamos cegos.
-```
+Sistema de combate por coordenadas.
 
----
+Mensagens de acerto e erro.
 
-### ✅ Tutorial
+Condição de vitória ao destruir toda a frota inimiga.
 
-O tutorial apresenta as regras básicas do jogo utilizando exemplos visuais do tabuleiro.
 
-Ele explica:
+📚 Tutorial Interativo
 
-* O que representa a água.
-* O que representa um navio.
-* Como identificar um acerto.
-* Como identificar um erro.
-* O objetivo principal da partida.
+O jogo possui uma seção "Como Jogar" que apresenta:
 
----
+O significado dos símbolos do tabuleiro.
 
-### ✅ Modos de Dificuldade
+Como funcionam os disparos.
 
-O jogador pode escolher entre dois tamanhos de tabuleiro:
+O que acontece ao acertar um navio.
 
-#### Fácil
+O que acontece ao errar um disparo.
 
-```text
-5 linhas x 10 colunas
-```
+O objetivo principal da partida.
 
-#### Difícil
 
-```text
-10 linhas x 10 colunas
-```
+🖥️ Interface
+
+Interface totalmente textual.
+
+Utilização de emojis para melhorar a visualização.
+
+Limpeza automática da tela durante a navegação.
+
+Menus animados para seleção das opções.
+
+
 
 ---
 
-## 🧩 Estrutura das Funções
+🎯 Modos de Jogo
 
-### narracao()
+Fácil
 
-Responsável por exibir textos letra por letra, simulando uma narração.
+Tabuleiro de:
 
----
+5 linhas
 
-### introducao()
+10 colunas
 
-Exibe toda a história inicial da campanha.
 
----
+Ideal para partidas mais rápidas.
 
-### tutorial()
+Difícil
 
-Apresenta as regras do jogo através de exemplos visuais e retorna ao menu principal após a conclusão.
+Tabuleiro de:
 
----
+10 linhas
 
-### modoFacil()
+10 colunas
 
-Cria e retorna um tabuleiro de tamanho 5x10.
 
----
+Maior área de jogo e mais dificuldade para localizar os navios inimigos.
 
-### modoDificil()
-
-Cria e retorna um tabuleiro de tamanho 10x10.
 
 ---
 
-### imprimir()
+🗺️ Símbolos Utilizados
 
-Mostra o conteúdo do tabuleiro no terminal.
+Símbolo	Significado
 
----
+🌊	Água
+🛥️	Embarcação
+💥	Acerto em um navio
+❌	Disparo na água
+🟦	Cabeçalho do tabuleiro
 
-### menu()
-
-Controla toda a navegação entre as telas do sistema.
-
----
-
-## 🖥️ Representação do Tabuleiro
-
-Exemplo de tabuleiro:
-
-```text
-🌊 🌊 🌊 🌊 🌊
-🌊 🚢 🚢 🚢 🌊
-🌊 🌊 🌊 🌊 🌊
-🌊 🌊 🌊 🌊 🌊
-🌊 🌊 🌊 🌊 🌊
-```
-
-### Legenda
-
-| Símbolo | Significado |
-| ------- | ----------- |
-| 🌊      | Água        |
-| 🚢      | Navio       |
-| 💥      | Acerto      |
-| ❌       | Erro        |
 
 ---
 
-## 👥 Integrantes
+🧠 Conceitos Aplicados
 
-* Samuel Cardoso
-* Felipe Augusto
-* Daniel Bredzke
+Durante o desenvolvimento foram utilizados diversos conceitos estudados em sala de aula:
+
+Vetores e matrizes
+
+Funções
+
+Modularização
+
+Loops (while e for)
+
+Estruturas condicionais (if, elif, else)
+
+Geração aleatória
+
+Validação de entrada do usuário
+
+Manipulação de strings
+
+Interface em terminal
+
+
 
 ---
 
-## 📌 Versão Atual
+📂 Estrutura do Projeto
 
-**Versão 0.1**
+Batalha Naval
+│
+├── Menu Principal
+├── Introdução Narrativa
+├── Tutorial
+├── Escolha de Dificuldade
+├── Posicionamento de Embarcações
+├── Combate
+├── Créditos
+└── Encerramento
 
-Primeira versão funcional contendo:
 
-* Menu principal
-* Introdução narrativa
-* Tutorial
-* Modos de dificuldade
-* Exibição de tabuleiros
+---
 
-Esta versão serve como base para a implementação completa da mecânica de batalha naval nas próximas etapas do projeto.
+👥 Integrantes
+
+Projeto desenvolvido por:
+
+Samuel Cardoso
+
+Felipe Augusto
+
+Daniel Bretzke
+
+---
+
+🏆 Objetivo Final
+
+Destruir todas as embarcações inimigas utilizando estratégia e lógica antes que sua própria frota seja completamente eliminada.
