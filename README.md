@@ -99,9 +99,7 @@ Durante o desenvolvimento foram utilizados diversos conceitos estudados em sala 
 
 ## 👥 Integrantes
 Projeto desenvolvido por:
-Samuel Cardoso
-Felipe Augusto
-Daniel Bretzke
+Samuel Cardoso, Felipe Augusto e Daniel Bretzke
 
 ---
 
